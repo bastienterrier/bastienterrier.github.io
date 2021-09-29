@@ -1,0 +1,26 @@
+.background {
+  background-color: var(--vtmn-semantic-color_background-primary);
+}
+
+h1, h2 {
+  color: var(--vtmn-semantic-color_content-information) !important;
+}
+
+p, li, a[href^="tel"], a[href^="mailto"]{
+  color: var(--vtmn-semantic-color_content-primary);
+}
+
+button {
+  color: var(--vtmn-semantic-color_content-action);
+}
+
+a {
+  color: var(--vtmn-semantic-color_content-action);
+}
+a:hover {
+  text-decoration: underline;
+}
+
+h3 {
+  color: var(--vtmn-semantic-color_content-positive) !important;
+}
