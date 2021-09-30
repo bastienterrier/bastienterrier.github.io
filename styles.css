@@ -1,9 +1,14 @@
-.background {
+body {
   background-color: var(--vtmn-semantic-color_background-primary);
 }
 
 h1, h2 {
   color: var(--vtmn-semantic-color_content-information) !important;
+}
+
+h2 {
+  padding-bottom: 4px;
+  border-bottom: solid 2px;
 }
 
 p, li, a[href^="tel"], a[href^="mailto"]{
@@ -23,4 +28,39 @@ a:hover {
 
 h3 {
   color: var(--vtmn-semantic-color_content-positive) !important;
+}
+
+.experience section:first-child{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.experience__tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+.experience__tags li {
+  padding: 4px 8px;
+  margin: 4px;
+  font-size: 0.9rem;
+  color: var(--vtmn-semantic-color_content-secondary);
+  background-color: var(--vtmn-semantic-color_background-secondary);
+  border-radius: 8px;
+}
+
+.experience__tasks li{
+  list-style: circle inside;
+}
+
+.experience__meta {
+  display: flex;
+  font-size: 0.9rem;
+  color: var(--vtmn-semantic-color_content-secondary);
+
+}
+
+.experience__meta p:last-child {
+  font-style: italic;
+  margin-left: 4px;
 }

@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
     <title>Curriculum Vitae - Bastien TERRIER</title>
     <link rel="stylesheet" href="https://unpkg.com/@vtmn/css-utilities" />
     <link rel="stylesheet" href="https://unpkg.com/@vtmn/css-design-tokens" />
@@ -14,8 +17,8 @@
     <link href="tailwind.css" rel="stylesheet" />
     <link href="styles.css" rel="stylesheet" />
   </head>
-  <body class="vtmn-theme_core--dark background">
-    <header class="float-right">
+  <body class="vtmn-theme_core--dark px-3 md:px-10 vtmn-typo_text-1">
+    <header class="text-right">
       <button onclick="toggleTheme()" class="hover:underline">
         Changer le thème
       </button>
@@ -24,7 +27,7 @@
       <img
         src="resources/picture.jpeg"
         alt="Photo de profil"
-        class="rounded-full h-32 w-32 object-cover"
+        class="rounded-full h-32 w-32 object-cover flex-shrink-0"
       />
 
       <div class="ml-3">
@@ -43,109 +46,129 @@
       <section>
         <h2 class="vtmn-typo_title-2">Expérience professionnelle</h2>
 
-        <article>
-          <h3>Développeur lead front</h3>
-          <p>Jan. 2021 - Aujourd'hui</p>
-          <p>Zenika - Lille</p>
-          <p>
-            Développeur lead sur tout le périmètre front sur le projet
-            <a href="https://location.decathlon.fr" target="_blank"
-              >Decathlon Location</a
-            >.
-          </p>
-          <ul>
-            <li>
-              Architecture et initialisation de la stack technique du site
-            </li>
-            <li>Co-conception des UI/UX</li>
-            <li>
-              Intégration des maquettes Figma en ReactJs en mettant l'accent sur
-              l'accessibilité et le référencement, notamment grâce au SSR
-            </li>
-            <li>Interaction avec les APIs interne Decathlon</li>
-            <li>Intégration d'un RMS (rental managment system)</li>
-            <li>Gestion et déploiement d'un CMS (content managment system)</li>
-            <li>Participation à la mise en place de la CI/CD</li>
-          </ul>
-          <ul>
-            <li>React/Redux</li>
-            <li>ExpressJs</li>
-            <li>TypeScript</li>
-            <li>Jest</li>
-            <li>Fast check</li>
-            <li>Docker</li>
-            <li>Postgres</li>
-            <li>Jenkins</li>
-            <li>Github Actions</li>
-            <li>Google Cloud Plateform</li>
-            <li>Datadog</li>
-            <li>Google Analytics/Google Tag Manager</li>
-          </ul>
+        <article class="experience">
+          <section>
+            <h3 class="vtmn-typo_title-3">Développeur lead front</h3>
+            <div class="experience__meta">
+              <p>Zenika</p>
+              <p>Jan. 2021 - Aujourd'hui</p>
+            </div>
+          </section>
+          <section>
+            <p>
+              Développeur lead sur tout le périmètre front sur le projet
+              <a href="https://location.decathlon.fr" target="_blank"
+                >Decathlon Location</a
+              >.
+            </p>
+            <ul class="experience__tasks">
+              <li>
+                Architecture et initialisation de la stack technique du site
+              </li>
+              <li>Co-conception des UI/UX</li>
+              <li>
+                Intégration des maquettes Figma en ReactJs en mettant l'accent
+                sur l'accessibilité et le référencement, notamment grâce au SSR
+              </li>
+              <li>Interaction avec les APIs interne Decathlon</li>
+              <li>Intégration d'un RMS (rental managment system)</li>
+              <li>
+                Gestion et déploiement d'un CMS (content managment system)
+              </li>
+              <li>Participation à la mise en place de la CI/CD</li>
+            </ul>
+            <ul class="experience__tags">
+              <li>React/Redux</li>
+              <li>ExpressJs</li>
+              <li>TypeScript</li>
+              <li>Jest</li>
+              <li>Fast check</li>
+              <li>Docker</li>
+              <li>Postgres</li>
+              <li>Jenkins</li>
+              <li>Github Actions</li>
+              <li>Google Cloud Plateform</li>
+              <li>Datadog</li>
+              <li>Google Analytics/Google Tag Manager</li>
+            </ul>
+          </section>
         </article>
 
-        <article>
-          <h3>Développeur web front-end</h3>
-          <p>Sept. 2019 - Dec. 2020</p>
-          <p>Zenika - Lille</p>
-          <p>
-            Développeur web sur le projet
-            <a href="https://activites.decathlon.fr" target="_blank"
-              >Decathlon Activités</a
-            >.
-          </p>
-          <ul>
-            <li>Intégration des maquettes Figma en VueJs/NuxtJs</li>
-            <li>
-              Développement de certaines APIs NestJS notamment celles de
-              paiement et de gestion des activités
-            </li>
-            <li>
-              Conception, architecture et développement du parcours dédié aux
-              organisateur dans un contexte d'internationalisation en Angular
-            </li>
-          </ul>
-          <ul>
-            <li>VueJs 2/NuxtJs</li>
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-            <li>Angular 9</li>
-            <li>NestJS</li>
-            <li>RxJs</li>
-            <li>Jest</li>
-            <li>Cypress</li>
-            <li>Figma</li>
-            <li>Google Analytics/Google Tag Manager</li>
-          </ul>
+        <article class="experience">
+          <section>
+            <h3 class="vtmn-typo_title-3">Développeur web front-end</h3>
+            <div class="experience__meta">
+              <p>Zenika</p>
+              <p>Sept. 2019 - Dec. 2020</p>
+            </div>
+          </section>
+          <section>
+            <p>
+              Développeur web sur le projet
+              <a href="https://activites.decathlon.fr" target="_blank"
+                >Decathlon Activités</a
+              >.
+            </p>
+            <ul class="experience__tasks">
+              <li>Intégration des maquettes Figma en VueJs/NuxtJs</li>
+              <li>
+                Développement de certaines APIs NestJS notamment celles de
+                paiement et de gestion des activités
+              </li>
+              <li>
+                Conception, architecture et développement du parcours dédié aux
+                organisateur dans un contexte d'internationalisation en Angular
+              </li>
+            </ul>
+            <ul class="experience__tags">
+              <li>VueJs 2/NuxtJs</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>Angular 9</li>
+              <li>NestJS</li>
+              <li>RxJs</li>
+              <li>Jest</li>
+              <li>Cypress</li>
+              <li>Figma</li>
+              <li>Google Analytics/Google Tag Manager</li>
+            </ul>
+          </section>
         </article>
 
-        <article>
-          <h3>Stagiaire développeur full-stack</h3>
-          <p>Fev. 2019 - Juil. 2019</p>
-          <p>Zenika - Lille</p>
-          <p>
-            Développement d'une API Open-Source permettant d'automatiser le
-            cycle de vie d'un repository Git :
-            <a
-              href="https://github.com/zenika-open-source/hygie"
-              target="_blank"
-            >
-              HYGIE </a
-            >.
-            <a href="resources/hygie.pdf" target="_blank">
-              Poster de soutenance de stage </a
-            >.
-          </p>
-          <ul>
-            <li>NestJS</li>
-            <li>TypeScript</li>
-            <li>VueJs</li>
-            <li>Mongodb</li>
-            <li>Github/Gitlab</li>
-            <li>Circle CI</li>
-            <li>Docker</li>
-            <li>Google Cloud Build</li>
-            <li>Prometheus/Grafana</li>
-          </ul>
+        <article class="experience">
+          <section>
+            <h3 class="vtmn-typo_title-3">Stagiaire développeur full-stack</h3>
+            <div class="experience__meta">
+              <p>Zenika</p>
+              <p>Fev. 2019 - Juil. 2019</p>
+            </div>
+          </section>
+          <section>
+            <p>
+              Développement d'une API Open-Source permettant d'automatiser le
+              cycle de vie d'un repository Git :
+              <a
+                href="https://github.com/zenika-open-source/hygie"
+                target="_blank"
+              >
+                HYGIE </a
+              >.
+              <a href="resources/hygie.pdf" target="_blank">
+                Poster de soutenance de stage </a
+              >.
+            </p>
+            <ul class="experience__tags">
+              <li>NestJS</li>
+              <li>TypeScript</li>
+              <li>VueJs</li>
+              <li>Mongodb</li>
+              <li>Github/Gitlab</li>
+              <li>Circle CI</li>
+              <li>Docker</li>
+              <li>Google Cloud Build</li>
+              <li>Prometheus/Grafana</li>
+            </ul>
+          </section>
         </article>
 
         <article>
