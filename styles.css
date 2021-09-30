@@ -1,0 +1,78 @@
+body {
+  background-color: var(--vtmn-semantic-color_background-primary);
+}
+
+h1, h2 {
+  color: var(--vtmn-semantic-color_content-information) !important;
+}
+
+h2 {
+  padding-bottom: 4px;
+  margin: 16px 0;
+  border-bottom: solid 2px;
+}
+
+p, li, a[href^="tel"], a[href^="mailto"]{
+  color: var(--vtmn-semantic-color_content-primary);
+}
+
+button {
+  color: var(--vtmn-semantic-color_content-action);
+}
+
+a {
+  color: var(--vtmn-semantic-color_content-action);
+}
+a:hover {
+  text-decoration: underline;
+}
+
+h3 {
+  color: var(--vtmn-semantic-color_content-positive) !important;
+  margin: 16px 0 8px;
+}
+
+.experience section:first-child, .training section:first-child{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.experience__tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+.experience__tags li {
+  padding: 4px 8px;
+  margin: 4px;
+  font-size: 0.9rem;
+  color: var(--vtmn-semantic-color_content-secondary);
+  background-color: var(--vtmn-semantic-color_background-secondary);
+  border-radius: 8px;
+}
+
+.experience__tasks li, .hobbies li{
+  list-style: circle inside;
+}
+
+.experience__meta, .training__meta {
+  display: flex;
+  font-size: 0.9rem;
+  color: var(--vtmn-semantic-color_content-secondary);
+
+}
+
+.experience__meta p:last-child, .training__meta p:last-child {
+  font-style: italic;
+  margin-left: 4px;
+}
+
+.experience__meta p:last-child:first-child {
+  margin-left: 0;
+}
+
+@media print {
+  button {
+    display: none;
+  }
+}

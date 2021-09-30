@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>Curriculum Vitae - Bastien TERRIER</title>
+    <link rel="stylesheet" href="https://unpkg.com/@vtmn/css-utilities" />
+    <link rel="stylesheet" href="https://unpkg.com/@vtmn/css-design-tokens" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap"
+    />
+    <link href="tailwind.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body class="vtmn-theme_core--dark px-3 md:px-10 vtmn-typo_text-1">
+    <header class="text-right">
+      <button onclick="toggleTheme()" class="hover:underline">
+        Changer le thème
+      </button>
+    </header>
+    <section class="flex items-center">
+      <img
+        src="resources/picture.jpeg"
+        alt="Photo de profil"
+        class="rounded-full h-32 w-32 object-cover flex-shrink-0"
+      />
+
+      <div class="ml-4">
+        <h1 class="vtmn-typo_title-3">Bastien TERRIER</h1>
+        <address class="not-italic">
+          <a href="mailto:bastien.terrier@gmail.com" class="block"
+            >bastien.terrier@gmail.com</a
+          >
+          <a href="tel:+33632348185" class="block">+336 32 34 81 85</a>
+          <p>57 bis rue des martyrs, 62136 Douvrin</p>
+        </address>
+      </div>
+    </section>
+
+    <main>
+      <section>
+        <h2 class="vtmn-typo_title-2">Expériences professionnelles</h2>
+
+        <article class="experience">
+          <section>
+            <h3 class="vtmn-typo_title-3">Développeur lead front</h3>
+            <div class="experience__meta">
+              <p>Zenika</p>
+              <p>Jan. 2021 - Aujourd'hui</p>
+            </div>
+          </section>
+          <section>
+            <p>
+              Développeur lead sur tout le périmètre front du projet
+              <a href="https://location.decathlon.fr" target="_blank"
+                >Decathlon Location</a
+              >.
+            </p>
+            <ul class="experience__tasks">
+              <li>
+                Architecture et initialisation de la stack technique du site
+              </li>
+              <li>Co-conception des UI/UX</li>
+              <li>
+                Intégration des maquettes Figma en ReactJs en mettant l'accent
+                sur l'accessibilité et le référencement, notamment grâce au
+                <i>server side rendering</i>
+              </li>
+              <li>Interaction avec les APIs internes Decathlon</li>
+              <li>Intégration d'un RMS (rental managment system)</li>
+              <li>
+                Gestion et déploiement d'un CMS (content managment system)
+              </li>
+              <li>Participation à la mise en place de la CI/CD</li>
+            </ul>
+            <ul class="experience__tags">
+              <li>React/Redux</li>
+              <li>ExpressJs</li>
+              <li>TypeScript</li>
+              <li>Jest</li>
+              <li>Fast check</li>
+              <li>Docker</li>
+              <li>Postgres</li>
+              <li>Jenkins</li>
+              <li>Github Actions</li>
+              <li>Google Cloud Plateform</li>
+              <li>Datadog</li>
+              <li>Google Analytics/Google Tag Manager</li>
+            </ul>
+          </section>
+        </article>
+
+        <article class="experience">
+          <section>
+            <h3 class="vtmn-typo_title-3">Développeur web front-end</h3>
+            <div class="experience__meta">
+              <p>Zenika</p>
+              <p>Sept. 2019 - Dec. 2020</p>
+            </div>
+          </section>
+          <section>
+            <p>
+              Développeur web sur le projet
+              <a href="https://activites.decathlon.fr" target="_blank"
+                >Decathlon Activités</a
+              >.
+            </p>
+            <ul class="experience__tasks">
+              <li>Intégration des maquettes Figma en VueJs/NuxtJs</li>
+              <li>
+                Développement de certaines APIs NestJS notamment celles de
+                paiement et de gestion des activités
+              </li>
+              <li>
+                Conception, architecture et développement du parcours dédié aux
+                organisateur dans un contexte d'internationalisation en Angular
+              </li>
+            </ul>
+            <ul class="experience__tags">
+              <li>VueJs 2/NuxtJs</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>Angular 9</li>
+              <li>NestJS</li>
+              <li>RxJs</li>
+              <li>Jest</li>
+              <li>Cypress</li>
+              <li>Figma</li>
+              <li>Google Analytics/Google Tag Manager</li>
+            </ul>
+          </section>
+        </article>
+
+        <article class="experience">
+          <section>
+            <h3 class="vtmn-typo_title-3">Stagiaire développeur full-stack</h3>
+            <div class="experience__meta">
+              <p>Zenika</p>
+              <p>Fev. 2019 - Juil. 2019</p>
+            </div>
+          </section>
+          <section>
+            <p>
+              Développement d'une API Open-Source permettant d'automatiser le
+              cycle de vie d'un repository Git :
+              <a
+                href="https://github.com/zenika-open-source/hygie"
+                target="_blank"
+              >
+                HYGIE</a
+              >.
+            </p>
+            <ul class="experience__tags">
+              <li>NestJS</li>
+              <li>TypeScript</li>
+              <li>VueJs</li>
+              <li>Mongodb</li>
+              <li>Github/Gitlab</li>
+              <li>Circle CI</li>
+              <li>Docker</li>
+              <li>Google Cloud Build</li>
+              <li>Prometheus/Grafana</li>
+            </ul>
+          </section>
+        </article>
+
+        <article class="experience">
+          <section>
+            <h3 class="vtmn-typo_title-3">
+              Boîtier IHM pour centrale inertielle d'un véhicule autonome
+            </h3>
+            <div class="experience__meta">
+              <p>UTC</p>
+              <p>Sept. 2018 - Jan. 2019</p>
+            </div>
+          </section>
+          <section>
+            <p>
+              Développement d'un boîtier permettant de connaître l'état de la
+              centrale inertielle et de communiquer avec elle, sans avoir à
+              passer par le PC embarqué du véhicule.
+            </p>
+            <ul class="experience__tags">
+              <li>Système embarqué</li>
+              <li>C</li>
+              <li>Arduino</li>
+              <li>Ergonomie</li>
+            </ul>
+          </section>
+        </article>
+
+        <article class="experience">
+          <section>
+            <h3 class="vtmn-typo_title-3">
+              Système embarqué de mesure de la qualité de l'air
+            </h3>
+            <div class="experience__meta">
+              <p>UTC</p>
+              <p>Fev. 2018 - Juin 2018</p>
+            </div>
+          </section>
+          <section>
+            <p>
+              Remontée de valeurs de pollutions vers une interface web,
+              permettant notamment d’obtenir une carte dynamique de pollution.
+            </p>
+            <ul class="experience__tags">
+              <li>Réseaux dynamiques</li>
+              <li>Python</li>
+              <li>Raspberry Pi</li>
+              <li>Tcl</li>
+              <li>configuration réseau</li>
+            </ul>
+          </section>
+        </article>
+
+        <article class="experience">
+          <section>
+            <h3 class="vtmn-typo_title-3">Stagiaire Développeur front-end</h3>
+            <div class="experience__meta">
+              <p>DECATHLON PRO - Villeneuve d'Ascq</p>
+              <p>Sept. 2017 - Fev. 2018</p>
+            </div>
+          </section>
+          <section>
+            <p>
+              Refonte ergonomique de la page de saisie de commande de l'ERP
+              DecathlonPro.
+            </p>
+            <ul class="experience__tags">
+              <li>Expérience utilisateur</li>
+              <li>HTML/CSS</li>
+              <li>jQuery</li>
+              <li>ASP.NET</li>
+              <li>C#</li>
+            </ul>
+          </section>
+        </article>
+
+        <article class="experience">
+          <section>
+            <h3 class="vtmn-typo_title-3">Développeur Web bénévole</h3>
+            <div class="experience__meta">
+              <p>AGIL INFO - Villeneuve d'Ascq</p>
+              <p>Jan. 201</p>
+            </div>
+          </section>
+          <section>
+            <p>
+              Bénévole pour la refonte du site web de l'entreprise. Utilisation
+              du CMS <i>Joomla!</i>.
+            </p>
+          </section>
+        </article>
+
+        <article class="experience">
+          <section>
+            <h3 class="vtmn-typo_title-3">Agent de manutention</h3>
+            <div class="experience__meta">
+              <p>DUTEXDOR - Pérenchies</p>
+              <p>2013 - 2016 (3 mois)</p>
+            </div>
+          </section>
+        </article>
+
+        <article class="experience">
+          <section>
+            <h3 class="vtmn-typo_title-3">Linguiste espagnol bénévole</h3>
+            <div class="experience__meta">
+              <p>Lycée Louis Blaringhem - Béthune</p>
+              <p>Jan. 2015</p>
+            </div>
+          </section>
+          <section>
+            <p>
+              Préparation des épreuves nationales avec les élèves de lycée et
+              BTS et évaluation des élèves à l’oral.
+            </p>
+          </section>
+        </article>
+      </section>
+
+      <section>
+        <h2 class="vtmn-typo_title-2">Projets personnels</h2>
+
+        <article class="experience">
+          <section>
+            <h3 class="vtmn-typo_title-3">
+              Professeur - Cours particulier Web
+            </h3>
+            <div class="experience__meta">
+              <p>2020 - Aujourd'hui</p>
+            </div>
+          </section>
+          <section>
+            <p>
+              Accompagnement de particuliers souhaitant découvrir le monde du
+              web (HTML/CSS/JavaScript) ou se former/perfectionner sur certains
+              frameworks (React, ExpressJs)
+            </p>
+          </section>
+        </article>
+
+        <article class="experience">
+          <section>
+            <h3 class="vtmn-typo_title-3">
+              Application de gestion d'un potager familial
+            </h3>
+            <div class="experience__meta">
+              <p>Été 2019</p>
+            </div>
+          </section>
+          <section>
+            <p>
+              Conception de l'application
+              <a
+                href="https://github.com/bastienterrier/iGarden"
+                target="_blank"
+                >iGarden</a
+              >
+              permettant de gérer notre pâture familiale avec nos animaux
+              (chevaux / poules) et notre potager.
+            </p>
+            <ul class="experience__tags">
+              <li>VueJs 2</li>
+              <li>NestJS</li>
+              <li>TypeScript</li>
+              <li>Docker</li>
+              <li>Google Cloud Build</li>
+              <li>Heroku / Vercel</li>
+            </ul>
+          </section>
+        </article>
+      </section>
+
+      <section>
+        <h2 class="vtmn-typo_title-2">Formations</h2>
+
+        <article class="training">
+          <section>
+            <h3 class="vtmn-typo_title-3">
+              Ingénieur en Informatique - Systèmes et Réseaux
+            </h3>
+            <div class="training__meta">
+              <p>Université de Technologie de Compiègne</p>
+              <p>2014 - 2019</p>
+            </div>
+          </section>
+        </article>
+
+        <article class="training">
+          <section>
+            <h3 class="vtmn-typo_title-3">
+              Baccalauréat Scientifique - Mention Très Bien
+            </h3>
+            <div class="training__meta">
+              <p>Lycée Louis Blaringhem - Béthune</p>
+              <p>2011 - 2014</p>
+            </div>
+          </section>
+          <section>
+            <p>Double diplôme Franco-Espagnol (bachibac)</p>
+          </section>
+        </article>
+      </section>
+
+      <section>
+        <h2 class="vtmn-typo_title-2">Loisirs</h2>
+        <article>
+          <ul class="hobbies">
+            <li>Sports de raquettes : Tennis, Badminton, Tennis de table</li>
+            <li>Musique, Guitare</li>
+            <li>Jeux de logique</li>
+            <li>Mangas</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <script lang="javascript">
+      function toggleTheme() {
+        const body = document.getElementsByTagName('body')[0]
+
+        body.classList.toggle('vtmn-theme_core--dark')
+      }
+    </script>
+  </body>
+</html>
